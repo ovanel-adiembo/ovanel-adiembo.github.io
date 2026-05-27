@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio BTS SIO SISR - ADIEMBO Ovanel - Infrastructure Systèmes et Réseaux - Lycée Melkior-Garré Cayenne">
+<meta name="keywords" content="BTS SIO SISR, portfolio, cybersécurité, réseaux, Wazuh, FreeRADIUS, Guyane">
+<meta name="author" content="ADIEMBO Ovanel">
+<title>ADIEMBO Ovanel — Portfolio BTS SIO SISR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">OA</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+      <li><a href="#apropos" class="nav-link">À propos</a></li>
+      <li><a href="#competences" class="nav-link">Compétences</a></li>
+      <li><a href="#projets" class="nav-link">Projets</a></li>
+      <li><a href="#stages" class="nav-link">Stages</a></li>
+      <li><a href="#veille" class="nav-link">Veille</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section id="accueil" class="hero">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="tag-dot"></span>
+      BTS SIO · Option SISR · Session 2026
+    </div>
+    <h1 class="hero-name">
+      <span class="name-first">ADIEMBO</span>
+      <span class="name-second">Ovanel</span>
+    </h1>
+    <p class="hero-subtitle">
+      <span class="typed-text" id="typedText"></span>
+      <span class="cursor">|</span>
+    </p>
+    <p class="hero-desc">
+      Étudiant en BTS SIO option SISR au Lycée Melkior-Garré de Cayenne.<br>
+      Passionné par la cybersécurité, les réseaux et l'administration système.
+    </p>
+    <div class="hero-actions">
+      <a href="#projets" class="btn-primary">Voir mes projets</a>
+      <a href="cv-ovanel-adiembo.pdf" class="btn-secondary" download>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Télécharger CV
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Projets E6</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Stages</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-number">10</span>
+        <span class="stat-label">Semaines terrain</span>
+      </div>
+    </div>
+  </div>
+  <a href="#apropos" class="scroll-down" aria-label="Défiler vers le bas">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     À PROPOS
+═══════════════════════════════════════════════ -->
+<section id="apropos" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">À Propos</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-avatar-wrap">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <span class="avatar-initials">OA</span>
+          </div>
+        </div>
+        <div class="avatar-badge">
+          <span class="badge-dot"></span>
+          Disponible
+        </div>
+      </div>
+      <div class="about-content">
+        <h3 class="about-name">ADIEMBO Ovanel</h3>
+        <p class="about-role">Étudiant BTS SIO SISR · 20 ans · Cayenne, Guyane française</p>
+        <p class="about-text">
+          Passionné par l'informatique et particulièrement par la <strong>cybersécurité</strong> et l'<strong>administration des systèmes et réseaux</strong>, je suis actuellement en 2ème année de BTS SIO option SISR au Lycée Melkior-Garré de Cayenne.
+        </p>
+        <p class="about-text">
+          Mon parcours m'a conduit à travailler sur des projets concrets comme la mise en place d'un <strong>SIEM Wazuh</strong> et d'un <strong>serveur FreeRADIUS</strong>, ainsi qu'à effectuer deux stages en collectivités territoriales de Guyane.
+        </p>
+        <p class="about-text">
+          Mon objectif : me spécialiser en <strong>infrastructure et cybersécurité</strong> pour protéger les systèmes d'information des organisations.
+        </p>
+        <div class="about-info-grid">
+          <div class="info-item">
+            <span class="info-label">Formation</span>
+            <span class="info-value">BTS SIO SISR — 2024/2026</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Établissement</span>
+            <span class="info-value">Lycée Melkior-Garré, Cayenne</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Bac obtenu</span>
+            <span class="info-value">Bac STMG option Mercatique</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <span class="info-value">ovaneladiembo@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     COMPÉTENCES
+═══════════════════════════════════════════════ -->
+<section id="competences" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">Compétences Techniques</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <h3>Systèmes</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux Ubuntu</span>
+          <span class="skill-tag">Windows Server</span>
+          <span class="skill-tag">Debian</span>
+          <span class="skill-tag">Fedora</span>
+          <span class="skill-tag">Active Directory</span>
+          <span class="skill-tag">Proxmox VE</span>
+          <span class="skill-tag">VMware</span>
+          <span class="skill-tag">VirtualBox</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <h3>Réseaux</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Cisco IOS</span>
+          <span class="skill-tag">VLAN</span>
+          <span class="skill-tag">SSH / Telnet</span>
+          <span class="skill-tag">Routage statique</span>
+          <span class="skill-tag">DNS / DHCP</span>
+          <span class="skill-tag">TCP/IP</span>
+          <span class="skill-tag">Switch managé</span>
+          <span class="skill-tag">Fibre optique</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h3>Cybersécurité</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Wazuh SIEM</span>
+          <span class="skill-tag highlight">FreeRADIUS</span>
+          <span class="skill-tag">Protocole RADIUS</span>
+          <span class="skill-tag">AAA (Auth/Author/Account)</span>
+          <span class="skill-tag">Analyse de logs</span>
+          <span class="skill-tag">MITRE ATT&CK</span>
+          <span class="skill-tag">Pare-feu</span>
+          <span class="skill-tag">Clés SSH</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          <h3>Services &amp; Outils</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Serveur de messagerie</span>
+          <span class="skill-tag">Serveur d'IA</span>
+          <span class="skill-tag">Apache</span>
+          <span class="skill-tag">Bash / Shell</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">HTML / CSS</span>
+          <span class="skill-tag">Certification PIX</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Barres de compétences -->
+    <div class="skill-bars">
+      <h3 class="skill-bars-title">Niveau de maîtrise</h3>
+      <div class="skill-bar-item">
+        <div class="bar-label"><span>Administration Linux</span><span class="bar-pct">75%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="bar-label"><span>Réseaux / Cisco</span><span class="bar-pct">70%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="bar-label"><span>Wazuh SIEM</span><span class="bar-pct">80%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="bar-label"><span>FreeRADIUS</span><span class="bar-pct">75%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="bar-label"><span>Virtualisation (Proxmox/VMware)</span><span class="bar-pct">70%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="bar-label"><span>Active Directory</span><span class="bar-pct">65%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     PROJETS E6
+═══════════════════════════════════════════════ -->
+<section id="projets" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">Projets BTS SIO</h2>
+      <p class="section-sub">Épreuve E6 — Administration des systèmes et réseaux</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- PROJET 1 : WAZUH -->
+      <div class="project-card">
+        <div class="project-number">N°01</div>
+        <div class="project-header">
+          <div class="project-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3 class="project-title">Mise en place d'une solution SIEM Wazuh</h3>
+            <span class="project-type">Cybersécurité · Supervision · SIEM/XDR</span>
+          </div>
+        </div>
+
+        <div class="project-context">
+          <h4>Contexte</h4>
+          <p>Durant mon stage à la Mairie de Macouria, mon tuteur M. BICEP m'a présenté la solution Wazuh. Cette découverte m'a motivé à déployer moi-même ce système SIEM au lycée Melkior-Garré.</p>
+        </div>
+
+        <div class="project-problematique">
+          <strong>Problématique :</strong> Comment déployer une solution SIEM open source telle que Wazuh dans un environnement virtualisé et superviser des événements de sécurité en temps réel ?
+        </div>
+
+        <div class="project-missions">
+          <h4>Missions réalisées</h4>
+          <ul>
+            <li>Création d'une VM Ubuntu 22.04 LTS sous VMware Workstation 17 (8Go RAM, 50Go, 8 vCPU)</li>
+            <li>Installation tout-en-un Wazuh 4.7.5 (Manager + Indexer + Dashboard) via script officiel</li>
+            <li>Déploiement d'un agent Wazuh sur poste Windows</li>
+            <li>Supervision de 774 alertes de sécurité en 7 jours</li>
+            <li>Analyse des événements via framework MITRE ATT&CK</li>
+            <li>Résolution d'incidents : pare-feu Ubuntu (port 443), services systemctl</li>
+          </ul>
+        </div>
+
+        <div class="project-results">
+          <div class="result-item">
+            <span class="result-number">774</span>
+            <span class="result-label">Alertes détectées</span>
+          </div>
+          <div class="result-item">
+            <span class="result-number">7</span>
+            <span class="result-label">Échecs auth bloqués</span>
+          </div>
+          <div class="result-item">
+            <span class="result-number">100%</span>
+            <span class="result-label">Services opérationnels</span>
+          </div>
+        </div>
+
+        <div class="project-tech">
+          <span class="tech-tag">Ubuntu 22.04 LTS</span>
+          <span class="tech-tag">VMware Workstation 17</span>
+          <span class="tech-tag">Wazuh 4.7.5</span>
+          <span class="tech-tag">Windows 11</span>
+          <span class="tech-tag">MITRE ATT&CK</span>
+          <span class="tech-tag">systemctl</span>
+          <span class="tech-tag">ufw</span>
+        </div>
+
+        <div class="project-difficulties">
+          <h4>Difficultés &amp; Solutions</h4>
+          <div class="diff-item">
+            <span class="diff-problem">Dashboard inaccessible</span>
+            <span class="diff-arrow">→</span>
+            <span class="diff-solution">Ouverture port 443 via ufw</span>
+          </div>
+          <div class="diff-item">
+            <span class="diff-problem">Agent Windows non connecté</span>
+            <span class="diff-arrow">→</span>
+            <span class="diff-solution">Réinstallation avec IP correcte</span>
+          </div>
+          <div class="diff-item">
+            <span class="diff-problem">Services non démarrés au reboot</span>
+            <span class="diff-arrow">→</span>
+            <span class="diff-solution">systemctl enable sur les 3 services</span>
+          </div>
+        </div>
+
+        <div class="project-competences">
+          <h4>Compétences SISR mobilisées</h4>
+          <div class="comp-tags">
+            <span class="comp-tag">C1 — Gérer le patrimoine informatique</span>
+            <span class="comp-tag">C2 — Répondre aux incidents</span>
+            <span class="comp-tag">C4 — Travailler en mode projet</span>
+            <span class="comp-tag">C5 — Mettre à disposition un service</span>
+          </div>
+        </div>
+
+        <a href="projet-wazuh.pdf" class="project-link" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Voir le dossier complet (PDF)
+        </a>
+      </div>
+
+      <!-- PROJET 2 : FREERADIUS -->
+      <div class="project-card">
+        <div class="project-number">N°02</div>
+        <div class="project-header">
+          <div class="project-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <h3 class="project-title">Mise en place d'un serveur FreeRADIUS</h3>
+            <span class="project-type">Authentification · Sécurité réseau · AAA</span>
+          </div>
+        </div>
+
+        <div class="project-context">
+          <h4>Contexte</h4>
+          <p>Dans les petites structures, le Wi-Fi est souvent protégé par un simple mot de passe partagé. J'ai mis en place FreeRADIUS pour centraliser l'authentification réseau avec des identifiants individuels par utilisateur.</p>
+        </div>
+
+        <div class="project-problematique">
+          <strong>Problématique :</strong> Comment mettre en place une solution d'authentification centralisée basée sur le protocole RADIUS pour contrôler et sécuriser les accès réseau ?
+        </div>
+
+        <div class="project-missions">
+          <h4>Missions réalisées</h4>
+          <ul>
+            <li>Création d'une VM Debian 12 (Bookworm) sous VirtualBox (2Go RAM, 20Go, Host-Only)</li>
+            <li>Installation FreeRADIUS 3.x + freeradius-utils sur Debian 12</li>
+            <li>Configuration des utilisateurs dans /etc/freeradius/3.0/users</li>
+            <li>Configuration du client RADIUS (clients.conf)</li>
+            <li>Tests d'authentification avec commande radtest (Access-Accept / Access-Reject)</li>
+            <li>Diagnostic en mode debug (freeradius -X)</li>
+          </ul>
+        </div>
+
+        <div class="project-results">
+          <div class="result-item">
+            <span class="result-number">4/4</span>
+            <span class="result-label">Tests concluants</span>
+          </div>
+          <div class="result-item">
+            <span class="result-number">AAA</span>
+            <span class="result-label">Modèle implémenté</span>
+          </div>
+          <div class="result-item">
+            <span class="result-number">0€</span>
+            <span class="result-label">Coût total</span>
+          </div>
+        </div>
+
+        <div class="project-tech">
+          <span class="tech-tag">Debian 12 Bookworm</span>
+          <span class="tech-tag">VirtualBox</span>
+          <span class="tech-tag">FreeRADIUS 3.x</span>
+          <span class="tech-tag">Protocole RADIUS</span>
+          <span class="tech-tag">radtest</span>
+          <span class="tech-tag">PAP/CHAP</span>
+          <span class="tech-tag">SSH</span>
+        </div>
+
+        <div class="project-difficulties">
+          <h4>Difficultés &amp; Solutions</h4>
+          <div class="diff-item">
+            <span class="diff-problem">FreeRADIUS ne démarrait pas</span>
+            <span class="diff-arrow">→</span>
+            <span class="diff-solution">Erreur syntaxe dans fichier users corrigée</span>
+          </div>
+          <div class="diff-item">
+            <span class="diff-problem">radtest retournait "no response"</span>
+            <span class="diff-arrow">→</span>
+            <span class="diff-solution">Vérification config radiusd.conf + restart</span>
+          </div>
+          <div class="diff-item">
+            <span class="diff-problem">VM en mode NAT (SSH impossible)</span>
+            <span class="diff-arrow">→</span>
+            <span class="diff-solution">Passage en mode Host-Only</span>
+          </div>
+        </div>
+
+        <div class="project-competences">
+          <h4>Compétences SISR mobilisées</h4>
+          <div class="comp-tags">
+            <span class="comp-tag">C1 — Gérer le patrimoine informatique</span>
+            <span class="comp-tag">C2 — Répondre aux incidents</span>
+            <span class="comp-tag">C4 — Travailler en mode projet</span>
+            <span class="comp-tag">C5 — Mettre à disposition un service</span>
+          </div>
+        </div>
+
+        <a href="projet-radius.pdf" class="project-link" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Voir le dossier complet (PDF)
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     STAGES
+═══════════════════════════════════════════════ -->
+<section id="stages" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 04</span>
+      <h2 class="section-title">Expériences Professionnelles</h2>
+    </div>
+
+    <div class="stages-timeline">
+
+      <!-- STAGE 2 -->
+      <div class="stage-card">
+        <div class="stage-badge">Stage 2ème année</div>
+        <div class="stage-header">
+          <div class="stage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <h3>Mairie de Macouria</h3>
+            <p class="stage-date">05 janvier 2026 — 02 février 2026 · 5 semaines</p>
+            <p class="stage-tutor">Tuteur : M. Bruno BICEP · Service Informatique</p>
+          </div>
+        </div>
+        <div class="stage-missions">
+          <div class="stage-mission">
+            <span class="mission-dot"></span>
+            <div>
+              <strong>Découverte Wazuh SIEM</strong>
+              <p>Observation d'un serveur Wazuh professionnel, compréhension de l'architecture SIEM/XDR. Motivation pour le Projet E6 N°1.</p>
+            </div>
+          </div>
+          <div class="stage-mission">
+            <span class="mission-dot"></span>
+            <div>
+              <strong>Recherche RADIUS</strong>
+              <p>Étude documentaire du protocole RADIUS, modèle AAA, cas d'usage en entreprise. Base du Projet E6 N°2.</p>
+            </div>
+          </div>
+          <div class="stage-mission">
+            <span class="mission-dot"></span>
+            <div>
+              <strong>Découverte du métier</strong>
+              <p>Fonctionnement d'un service informatique en collectivité territoriale, enjeux cybersécurité du secteur public.</p>
+            </div>
+          </div>
+        </div>
+        <div class="stage-tech">
+          <span class="tech-tag">Wazuh</span>
+          <span class="tech-tag">RADIUS</span>
+          <span class="tech-tag">Cybersécurité</span>
+          <span class="tech-tag">Linux</span>
+        </div>
+      </div>
+
+      <!-- STAGE 1 -->
+      <div class="stage-card">
+        <div class="stage-badge">Stage 1ère année</div>
+        <div class="stage-header">
+          <div class="stage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <h3>Mairie de Sinnamary</h3>
+            <p class="stage-date">02 juin 2025 — 04 juillet 2025 · 5 semaines</p>
+            <p class="stage-tutor">Tuteurs : Franzy Guinguincoin &amp; Brian Clet · Service Informatique</p>
+          </div>
+        </div>
+        <div class="stage-missions">
+          <div class="stage-mission">
+            <span class="mission-dot"></span>
+            <div>
+              <strong>Configuration Switch Managé</strong>
+              <p>Création de VLAN pour segmenter le réseau, désactivation Telnet, activation SSH avec clés cryptographiques, paramétrage DNS et routage statique.</p>
+            </div>
+          </div>
+          <div class="stage-mission">
+            <span class="mission-dot"></span>
+            <div>
+              <strong>Installation Proxmox VE</strong>
+              <p>Déploiement de l'hyperviseur Proxmox, configuration IP fixe, DNS, fuseau horaire et nom d'hôte pour la virtualisation des serveurs.</p>
+            </div>
+          </div>
+          <div class="stage-mission">
+            <span class="mission-dot"></span>
+            <div>
+              <strong>Administration Linux Ubuntu</strong>
+              <p>Maintenance du serveur, création de répertoires, correction de permissions, gestion des utilisateurs et des droits d'accès.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photos de stage -->
+        <div class="stage-photos">
+          <h4>Photos du stage</h4>
+          <div class="photos-grid">
+            <div class="photo-item">
+              <img src="img_switch_config.jpg" alt="Configuration switch managé avec CLI" loading="lazy">
+              <span class="photo-caption">Configuration switch CLI</span>
+            </div>
+            <div class="photo-item">
+              <img src="img_salle_serveurs.jpg" alt="Salle serveurs avec baies rack" loading="lazy">
+              <span class="photo-caption">Salle serveurs — Baies rack</span>
+            </div>
+            <div class="photo-item">
+              <img src="img_rack_apc.jpg" alt="Travail devant rack APC Proxmox" loading="lazy">
+              <span class="photo-caption">Travail sur Proxmox / rack APC</span>
+            </div>
+            <div class="photo-item">
+              <img src="img_cables_fibre.jpg" alt="Câbles fibre optique OM3" loading="lazy">
+              <span class="photo-caption">Câbles fibre OM3 LC-UPC</span>
+            </div>
+            <div class="photo-item">
+              <img src="img_sfp_modules.jpg" alt="Modules SFP+ transceivers" loading="lazy">
+              <span class="photo-caption">Modules SFP+ 10GBase-SR</span>
+            </div>
+            <div class="photo-item">
+              <img src="img_linux_terminal.jpg" alt="Terminal Linux dnf upgrade" loading="lazy">
+              <span class="photo-caption">Administration Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-tech">
+          <span class="tech-tag">Switch managé</span>
+          <span class="tech-tag">VLAN</span>
+          <span class="tech-tag">SSH</span>
+          <span class="tech-tag">Proxmox VE</span>
+          <span class="tech-tag">Linux Ubuntu</span>
+          <span class="tech-tag">Fibre optique</span>
+          <span class="tech-tag">SFP+</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     VEILLE TECHNOLOGIQUE
+═══════════════════════════════════════════════ -->
+<section id="veille" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 05</span>
+      <h2 class="section-title">Veille Technologique</h2>
+      <p class="section-sub">Sujet : L'Intelligence Artificielle dans l'Informatique</p>
+    </div>
+
+    <div class="veille-intro">
+      <div class="veille-intro-content">
+        <h3>Pourquoi ce sujet ?</h3>
+        <p>L'Intelligence Artificielle transforme profondément le domaine informatique, notamment en cybersécurité et en administration système. En tant que futur technicien SISR, comprendre l'impact de l'IA sur les infrastructures est devenu indispensable.</p>
+        <p>Ma veille porte sur l'évolution des <strong>modèles de langage (LLM)</strong>, l'<strong>IA générative</strong>, et plus particulièrement l'utilisation de l'IA dans la <strong>détection de cybermenaces</strong> et la supervision des infrastructures.</p>
+      </div>
+    </div>
+
+    <div class="veille-timeline">
+      <h3 class="timeline-title">Axes de veille</h3>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024 — 2025</div>
+          <h4>Les LLM (Large Language Models)</h4>
+          <p>Émergence des modèles comme GPT-4, Llama, Mistral. Ces modèles révolutionnent la façon dont les techniciens peuvent obtenir de l'aide pour diagnostiquer des pannes, rédiger des scripts et analyser des configurations réseau.</p>
+          <div class="timeline-tags">
+            <span>GPT-4</span><span>Llama</span><span>Ollama</span><span>LLM locaux</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025</div>
+          <h4>IA et Cybersécurité</h4>
+          <p>L'IA est désormais intégrée dans les outils SIEM pour améliorer la détection des menaces. Des solutions comme Wazuh exploitent l'IA pour réduire les faux positifs et prioriser les alertes critiques. L'IA est aussi utilisée par les attaquants (phishing automatisé, génération de malwares).</p>
+          <div class="timeline-tags">
+            <span>SIEM + IA</span><span>Détection anomalies</span><span>Threat intelligence</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025 — 2026</div>
+          <h4>IA Souveraine et Locale</h4>
+          <p>Face aux enjeux de confidentialité (RGPD), les organisations publiques comme les mairies s'orientent vers des solutions d'IA déployées localement (on-premise). Des outils comme Ollama permettent de faire tourner des LLM en local sans envoyer de données vers le cloud.</p>
+          <div class="timeline-tags">
+            <span>IA souveraine</span><span>Ollama</span><span>RGPD</span><span>On-premise</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2026</div>
+          <h4>IA dans l'Administration Système</h4>
+          <p>Les outils d'IA commencent à automatiser des tâches d'administration : analyse de logs, détection de configurations erronées, recommandations de sécurité. L'administrateur système de demain devra maîtriser ces outils pour rester compétitif.</p>
+          <div class="timeline-tags">
+            <span>AIOps</span><span>Auto-remédiation</span><span>Analyse de logs IA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="veille-sources">
+      <h3>Sources utilisées</h3>
+      <div class="sources-grid">
+        <div class="source-card">
+          <div class="source-icon">🌐</div>
+          <div class="source-name">ANSSI</div>
+          <div class="source-desc">Agence nationale cybersécurité</div>
+          <a href="https://www.ssi.gouv.fr" target="_blank" rel="noopener" class="source-link">ssi.gouv.fr</a>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">📰</div>
+          <div class="source-name">LeMagIT</div>
+          <div class="source-desc">Actualités IT francophones</div>
+          <a href="https://www.lemagit.fr" target="_blank" rel="noopener" class="source-link">lemagit.fr</a>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">🔐</div>
+          <div class="source-name">Wazuh Blog</div>
+          <div class="source-desc">Sécurité & SIEM open source</div>
+          <a href="https://wazuh.com/blog" target="_blank" rel="noopener" class="source-link">wazuh.com/blog</a>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">📡</div>
+          <div class="source-name">The Hacker News</div>
+          <div class="source-desc">Actualités cybersécurité</div>
+          <a href="https://thehackernews.com" target="_blank" rel="noopener" class="source-link">thehackernews.com</a>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">🤖</div>
+          <div class="source-name">Ollama.ai</div>
+          <div class="source-desc">LLM locaux open source</div>
+          <a href="https://ollama.ai" target="_blank" rel="noopener" class="source-link">ollama.ai</a>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">🔬</div>
+          <div class="source-name">MITRE ATT&CK</div>
+          <div class="source-desc">Framework cyberattaques</div>
+          <a href="https://attack.mitre.org" target="_blank" rel="noopener" class="source-link">attack.mitre.org</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CERTIFICATIONS
+═══════════════════════════════════════════════ -->
+<section id="certifications" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 06</span>
+      <h2 class="section-title">Certifications &amp; Documents</h2>
+    </div>
+    <div class="certs-grid">
+
+      <div class="cert-card">
+        <div class="cert-logo">PIX</div>
+        <div class="cert-info">
+          <h3>Certification PIX</h3>
+          <p class="cert-date">11 mars 2026</p>
+          <p class="cert-issuer">GIP Pix · Lycée Melkior et Garré</p>
+          <p class="cert-desc">Score : 254/895 · Niveau Novice 2</p>
+          <p class="cert-code">Code : P-WK694BB8</p>
+        </div>
+        <a href="certification-pix.pdf" class="cert-link" target="_blank" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-logo cert-logo-bts">BTS</div>
+        <div class="cert-info">
+          <h3>Tableau de Synthèse E5</h3>
+          <p class="cert-date">Session 2026</p>
+          <p class="cert-issuer">BTS SIO SISR · Lycée Melkior-Garré</p>
+          <p class="cert-desc">Réalisations professionnelles — Épreuve E5</p>
+          <p class="cert-code">N° candidat : 02051912515</p>
+        </div>
+        <a href="Tableau_Synthese_E5_ADIEMBO_Ovanel.pdf" class="cert-link" target="_blank" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 07</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Prenons contact</h3>
+        <p>Vous souhaitez me contacter pour mon BTS SIO SISR ou pour une opportunité professionnelle ? N'hésitez pas à m'écrire !</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:ovaneladiembo@gmail.com">ovaneladiembo@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Cayenne, Guyane française</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.09 6.09l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Lycée Melkior-Garré · BTS SIO SISR</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required maxlength="100" autocomplete="name">
+          <span class="field-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required maxlength="100" autocomplete="email">
+          <span class="field-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required maxlength="150">
+          <span class="field-error" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required maxlength="1000"></textarea>
+          <span class="field-error" id="messageError"></span>
+          <span class="char-count" id="charCount">0 / 1000</span>
+        </div>
+        <!-- Anti-spam honeypot (caché) -->
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-footer">
+          <span class="form-note">* Les champs sont requis</span>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Envoyer</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          ✓ Message envoyé avec succès ! Je vous répondrai rapidement.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">OA</span>
+          <span class="logo-bracket">]</span>
+        </div>
+        <p>ADIEMBO Ovanel — BTS SIO SISR</p>
+        <p class="footer-sub">Lycée Melkior-Garré · Cayenne · Session 2026</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#projets">Projets E6</a></li>
+          <li><a href="#stages">Stages</a></li>
+          <li><a href="#veille">Veille techno</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-docs">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="projet-wazuh.pdf" target="_blank">Dossier Wazuh SIEM</a></li>
+          <li><a href="projet-radius.pdf" target="_blank">Dossier FreeRADIUS</a></li>
+          <li><a href="certification-pix.pdf" target="_blank">Certification PIX</a></li>
+          <li><a href="Tableau_Synthese_E5_ADIEMBO_Ovanel.pdf" target="_blank">Tableau de synthèse E5</a></li>
+          <li><a href="cv-ovanel-adiembo.pdf" download>Curriculum Vitae</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ADIEMBO Ovanel · Portfolio BTS SIO SISR · N° candidat : 02051912515</p>
+      <p class="footer-made">Fait avec passion · Guyane française 🇬🇫</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bouton retour haut -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
